@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="form" action="index.html" method="post">
+      Your Name:<input type="text" name="yourname" required><br>
+      Phone:<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+      Email:<input type="email" name="email" required><br>
+      Eircode:<div class="eircode-box">
+      <input id="p1" type="text" maxlength="1" required>
+      <input id="p2" type="text" maxlength="1" required>
+      <input id="p3" type="text" maxlength="1" required>
+      <span class="space"> </span>
+      <input id="p4" type="text" maxlength="1" required>
+      <input id="p5" type="text" maxlength="1" required>
+      <input id="p6" type="text" maxlength="1" required>
+      <input id="p7" type="text" maxlength="1" required>
+      </div>
+      Installation Type:<br>
+      <input type="checkbox" name="commercial" required>
+      <label for="commercial">Commercial</label><br>
+      <input type="checkbox" name="residential" required>
+      <label for="residential">Residential</label><br>
+      <label for="needs">Tell us your needs:</label><br>
+      <textarea name="needs" rows="10" cols="40" required></textarea>
+      <div class="priv">
+        <input type="checkbox" name="privacy" required>
+        <label for="privacy">I have read and agree the <a href="privacy.html">Privacy Policy</a></label><br>
+      </div>
+      <input type="submit" value="Send">
+    </form>
+
+  </body>
+</html>
